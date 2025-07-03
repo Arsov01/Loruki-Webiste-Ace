@@ -309,10 +309,13 @@ pre {
 /* hidden  form*/
 
 .hidden {
-  visibility: hidden;
-  height: 0;
+  display: none !important;
 }
-
+/* Add this if not present */
+[data-netlify] .hidden,
+.hidden {
+  display: none !important;
+}
 /* animations */
 
 @keyframes slideInFromLeft {
